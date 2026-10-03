@@ -3,7 +3,7 @@
 """
 Nama File : main.py
 Tujuan    : Integrasi seluruh modul dan mencetak laporan akhir cabang
-Pembuat   : Muhammad Naufal Adi Brata Putra Suharizman Poerwopyth - 2409106049
+Pembuat   : Muhammad Naufal Adi Brata Putra Suharizman Poerwo - 2409106049
 """
 import identitas
 import ssh_modul
