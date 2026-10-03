@@ -9,7 +9,6 @@ from identitas import nim
 
 # Aturan turunan: 6 digit terakhir NIM dipecah jadi 3 pasang (p1, p2, p3).
 # Nilai = pasangan + offset agar bervariasi (maks 99):
-#   sampel1 = p1, sampel2 = p2 + 35, sampel3 = p3 + 65
 _pasang = [int(nim[-6:][i:i + 2]) for i in (0, 2, 4)]
 _offset = [0, 0, 35]
 
