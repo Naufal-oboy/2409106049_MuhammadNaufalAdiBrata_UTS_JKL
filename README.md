@@ -189,9 +189,9 @@ menampilkan laporan gabungan lewat class `LaporanCabang` dengan method
 Data sensitif (kode cabang, kredensial) sengaja tidak dicantumkan di sini.
 
 - **Repository**: dinamai `2409106049_MuhammadNaufalAdiBrata_UTS_JKL`.
-- **Username SSH**: pola `admin_049`.
-- **Community SNMP**: pola `comm_049`.
-- **VLAN ID NETCONF**: diambil langsung dari `49`.
+- **Username SSH**: pola `admin_<kode_cabang>`.
+- **Community SNMP**: pola `comm_<kode_cabang>`.
+- **VLAN ID NETCONF**: diambil langsung dari `kode_cabang`.
 - **Sampel telemetry**: diturunkan dari 6 digit terakhir NIM yang dipecah
   menjadi 3 pasangan digit. Pasangan pertama dan kedua dipakai apa adanya,
   pasangan ketiga ditambah offset 35 agar ketiga kelas klasifikasi
@@ -221,8 +221,8 @@ Ringkasan bagian telemetry dan NETCONF (SSH dan SNMP bergantung pada target):
       <vlan xmlns="urn:huawei:yang:huawei-vlan">
         <vlans>
           <vlan>
-            <id>49</id>
-            <name>VLAN_CABANG_049</name>
+            <id>[VLAN ID dari kode_cabang]</id>
+            <name>VLAN_CABANG_[kode_cabang]</name>
           </vlan>
         </vlans>
       </vlan>
@@ -270,3 +270,4 @@ Periksa dengan `git log --oneline`.
 | `AttributeError: indent` | versi Python di bawah 3.9; perbarui Python |
 
 ---
+
